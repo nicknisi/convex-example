@@ -1,7 +1,13 @@
 {
   "buildCommand": "pnpm run build",
-  "outputDirectory": ".next",
-  "devCommand": "pnpm run dev",
+  "framework": "nextjs",
   "installCommand": "pnpm install",
-  "framework": "nextjs"
+  "env": {
+    "WORKOS_CLIENT_ID": "@workos_client_id",
+    "WORKOS_API_KEY": "@workos_api_key",
+    "WORKOS_COOKIE_PASSWORD": "@workos_cookie_password",
+    "NEXT_PUBLIC_WORKOS_REDIRECT_URI": "@workos_redirect_uri",
+    "NEXT_PUBLIC_CONVEX_URL": "@convex_url"
+  }
 }
+
